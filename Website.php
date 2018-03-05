@@ -67,7 +67,7 @@ $website->add_to_bottom(
 // Adding images to website
 $website->add_to_images(
     array(
-        'php-logo' => 'https://php-library.zlatanstajic.com/assets/img/elephpant.png',
+        'php-logo' => 'https://php-library.zlatanstajic.com/assets/img/phplibrary-logo-blue.png',
     ),
     TRUE
 );
@@ -93,6 +93,7 @@ echo '
         <h1>Welcome to the ' . $website->name . '</h1>
         <img src="' . $website->images('php-logo') . '">
     </div>
+    <br/>
 ';
 
 // Redirection

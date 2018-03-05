@@ -14,8 +14,8 @@ use phplibrary\File_Version as file_version;
 
 file_version::dump(array(
     'file_names' => array(
-        'log_files'    => 'files',
-        'log_versions' => 'versions',
+        'log_files'    => '../outsource/file_version/files',
+        'log_versions' => '../outsource/file_version/versions',
     ),
     'listing'    => array(
         'directory'  => 'D:/Zlatan/Browser/phpmailer/',
