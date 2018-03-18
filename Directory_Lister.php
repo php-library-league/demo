@@ -22,18 +22,16 @@ include '../vendor/autoload.php';
 use phplibrary\Directory_Lister as directory_lister;
 use phplibrary\Format as format;
 
-$params = array(
-    'directory'  => __DIR__ . '../../outsource/sorter/source/',
+$listing = directory_lister::listing(array(
+    'directory'  => __DIR__ . '../../outsource/sorter/destination/',
     'method'     => 'crawl',
     'print'      => FALSE,
     'display'    => FALSE,
     'reverse'    => TRUE,
     'delimiter'  => 'php',
-    'date_start' => '10-23',
-    'date_end'   => '10-25',
-    'years'      => array(2013, 2017),
-    'types'      => array('php'),
-);
-
-$listing = directory_lister::listing($params);
+    'date_start' => '03-06',
+    'date_end'   => '03-06',
+    'years'      => array(2018),
+    'types'      => array('jpg'),
+));
 format::pre($listing, TRUE);
