@@ -23,15 +23,15 @@ use phplibrary\Directory_Lister as directory_lister;
 use phplibrary\Format as format;
 
 $listing = directory_lister::listing(array(
-    'directory'  => __DIR__ . '../../outsource/sorter/destination/',
+    'directory'  => __DIR__ . '../../outsource/directory_lister/',
     'method'     => 'crawl',
     'print'      => FALSE,
     'display'    => FALSE,
     'reverse'    => TRUE,
     'delimiter'  => 'php',
-    'date_start' => '03-06',
-    'date_end'   => '03-06',
-    'years'      => array(2018),
-    'types'      => array('jpg'),
+    'date_start' => '01-01',
+    'date_end'   => '31-12',
+    'years'      => array(2016),
+    'types'      => array('png'),
 ));
 format::pre($listing, TRUE);
