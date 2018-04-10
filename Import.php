@@ -13,13 +13,14 @@ include '../vendor/autoload.php';
 use phplibrary\Format as format;
 use phplibrary\Import as import;
 
-$file_location = realpath('../outsource/import/example1.xlsx');
-$data = import::import_data($file_location);
+$file_location = realpath('../outsource/import/example1.xls');
+$data          = import::import_data($file_location);
+
 if ($data)
 {
-    echo format::pre($data);    
+    format::pre($data);
 }
-else 
+else
 {
-    echo 'No file/data for import.';    
+    format::pre('No file/data for import.');
 }
