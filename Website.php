@@ -12,9 +12,9 @@ include '../vendor/autoload.php';
 
 use phplibrary\Website as website;
 
-// -----------------------------------------------------------------------------
-// ---| Usage |-----------------------------------------------------------------
-// -----------------------------------------------------------------------------
+// ------------------------------------------------------------------
+// ---| Usage |------------------------------------------------------
+// ------------------------------------------------------------------
 
 // Instance of Website class
 $website = new website(
@@ -72,20 +72,30 @@ $website->add_to_images(
     TRUE
 );
 
-// -----------------------------------------------------------------------------
-// ---| Demonstration |---------------------------------------------------------
-// -----------------------------------------------------------------------------
+// ------------------------------------------------------------------
+// ---| Demonstration |----------------------------------------------
+// ------------------------------------------------------------------
+
+echo '<!DOCTYPE html>';
+echo PHP_EOL;
+echo '<html>';
+echo PHP_EOL;
+echo '<head>';
+echo PHP_EOL;
 
 // Printing meta
-/*
 echo $website->meta(array(
     'shortcut_icon' => $website->images('php-logo'),
     'touch_icon'    => $website->images('php-logo'),
 ));
-*/
 
 // Printing head
-//echo $website->head();
+echo $website->head();
+
+echo '</head>';
+echo PHP_EOL;
+echo '<body>';
+echo PHP_EOL;
 
 // Show name and image
 echo '
@@ -96,9 +106,6 @@ echo '
     <br/>
 ';
 
-// Redirection
-//$website->redirect_to_page('https://www.google.com/', TRUE);
-
 if (isset($website->server['referer']))
 {
     echo 'You were appointed to this page from: ';
@@ -107,10 +114,14 @@ if (isset($website->server['referer']))
 }
 
 // Printing bottom
-//echo $website->bottom();
+echo $website->bottom();
 
 // Creator signature
 echo $website->signature();
 
 // Creator signature for html source
 echo $website->signature_hidden();
+
+echo '</body>';
+echo PHP_EOL;
+echo '</html>';
