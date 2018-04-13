@@ -14,11 +14,11 @@ use phplibrary\File_Version as file_version;
 
 file_version::dump(array(
     'file_names' => array(
-        'log_files'    => '../outsource/file_version/files',
-        'log_versions' => '../outsource/file_version/versions',
+        'log_files'    => realpath('../outsource/') . DIRECTORY_SEPARATOR . 'files',
+        'log_versions' => realpath('../outsource/') . DIRECTORY_SEPARATOR . 'versions',
     ),
     'listing'    => array(
-        'directory'  => 'D:/Zlatan/Browser/phpmailer/',
+        'directory'  => realpath('../outsource/sorter/') . DIRECTORY_SEPARATOR,
         'method'     => 'crawl',
     ),
 ));
