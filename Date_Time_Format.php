@@ -13,36 +13,26 @@ include '../vendor/autoload.php';
 use phplibrary\Date_Time_Format as date_time_format;
 use phplibrary\Format as format;
 
-$current = date_time_format::current();
-
-echo $current . '<br/>';
+format::pre('Current datetime: ' . date_time_format::current());
 
 $user_date = '08.11.2017 16:07';
 
-echo $user_date . '<br/>';
+format::pre('User date: ' . $user_date);
 
 $database_date = date_time_format::format_to_database($user_date);
 $user_date     = date_time_format::format_to_user($database_date);
 
-echo $database_date . '<br/>' . $user_date . '<br/>';
+format::pre('Database date: ' . $database_date);
+format::pre('User date: ' . $user_date);
 
-$user_date_format     = date_time_format::format($user_date, TRUE);
-$database_date_format = date_time_format::format($database_date, TRUE);
-
-echo $database_date_format . '<br/>' . $user_date_format . '<br/>';
-
-echo date_time_format::minutes_to_hours(61) . '<br/>';
-echo date_time_format::hours_to_minutes('61:55') . '<br/>';
-
-format::pre(date_time_format::days_before(7));
-format::pre(date_time_format::days_after(7));
-
-$list_of_days = date_time_format::get_days('serbian', 3, FALSE);
-format::pre($list_of_days);
-
-$list_of_months = date_time_format::get_months('serbian', 3);
-format::pre($list_of_months);
-
-echo date_time_format::format('2017-10-23 15:57:19');
-format::pre(date_time_format::number_to_month(date('n'), 'english'));
-format::pre(date_time_format::number_to_day(date('N'), 'english'));
+format::pre('User date format: ' . date_time_format::format($user_date, TRUE));
+format::pre('Database date format: ' . date_time_format::format($database_date, TRUE));
+format::pre('Minutes to hours: ' . date_time_format::minutes_to_hours(61));
+format::pre('Hours to minutes: ' . date_time_format::hours_to_minutes('61:55'));
+format::pre('Format: ' . date_time_format::format('2017-10-23 15:57:19'));
+format::pre('Number to month: ' . date_time_format::number_to_month(date('n'), 'english'));
+format::pre('Number to day: ' . date_time_format::number_to_day(date('N'), 'english'));
+format::pre('Days before: ' . date_time_format::days_before(7));
+format::pre('Days after: ' . date_time_format::days_after(7));
+format::pre(date_time_format::get_days('serbian', 3, FALSE));
+format::pre(date_time_format::get_months('serbian', 3));
