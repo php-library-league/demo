@@ -12,4 +12,8 @@ $ wget https://link.zlatanstajic.com/software/php-library/outsource.zip
 $ unzip outsource.zip
 ```
 
+You can access any script from one place by opening [index.php] in your browser.
+
 That's it.
+
+[index.php]: https://github.com/php-library-league/demo/blob/master/index.php
