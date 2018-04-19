@@ -23,7 +23,7 @@ use phplibrary\Directory_Lister as directory_lister;
 use phplibrary\Format as format;
 
 $listing = directory_lister::listing(array(
-    'directory'  => __DIR__ . '../../outsource/directory_lister/',
+    'directory'  => realpath('../outsource/directory_lister/') . DIRECTORY_SEPARATOR,
     'method'     => 'crawl',
     'print'      => FALSE,
     'display'    => FALSE,
