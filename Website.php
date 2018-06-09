@@ -19,12 +19,12 @@ use phplibrary\Website as website;
 // Instance of Website class
 $website = new website(
     array(
-        'name'          => 'PHP Library',
-        'host'          => 'http://localhost/_develop/php-library/',
-        'made'          => '2017',
-        'language'      => 'EN',
-        'description'   => 'PHP Library is set of classes containing most useful methods and variables for Web Development.',
-        'keywords'      => 'php, library, oop, php7',
+        'name'        => 'PHP Library',
+        'host'        => 'http://localhost/_develop/php-library/',
+        'made'        => '2017',
+        'language'    => 'EN',
+        'description' => 'PHP Library is set of classes containing most useful methods and variables for Web Development.',
+        'keywords'    => 'php, library, oop, php7',
     )
 );
 

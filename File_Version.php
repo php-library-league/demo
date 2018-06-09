@@ -18,7 +18,7 @@ file_version::dump(array(
         'log_versions' => realpath('../outsource/') . DIRECTORY_SEPARATOR . 'versions',
     ),
     'listing'    => array(
-        'directory'  => realpath('../outsource/sorter/') . DIRECTORY_SEPARATOR,
-        'method'     => 'crawl',
+        'directory' => realpath('../outsource/sorter/') . DIRECTORY_SEPARATOR,
+        'method'    => 'crawl',
     ),
 ));

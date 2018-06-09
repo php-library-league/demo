@@ -13,10 +13,10 @@ include '../vendor/autoload.php';
 use phplibrary\Directory_Lister as directory_lister;
 
 $listing = directory_lister::listing(array(
-    'directory'  => realpath('') . DIRECTORY_SEPARATOR,
-    'method'     => 'files',
-    'print'      => FALSE,
-    'types'      => array('php'),
+    'directory' => realpath('') . DIRECTORY_SEPARATOR,
+    'method'    => 'files',
+    'print'     => FALSE,
+    'types'     => array('php'),
 ));
 
 echo '<!DOCTYPE html>';
