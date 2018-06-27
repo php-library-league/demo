@@ -22,6 +22,8 @@ $text   = '<b>Lorem Ipsum</b> is simply <i>dummy</i> text of the printing and ty
 $string = format::string($text, 0, 50);
 format::pre($string);
 
+
+format::pre(format::number(20.00, FALSE, 1));
 format::pre(format::price_format(104955.54));
 format::pre(format::array_to_string(array(
     'csv',
