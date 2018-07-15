@@ -13,9 +13,9 @@ include '../vendor/autoload.php';
 use phplibrary\Random as random;
 use phplibrary\Format as format;
 
+format::pre(random::break_caching());
 format::pre(random::generate(4, 'STRING_ADVANCED'));
-
-$list = array(
+format::pre(random::element(array(
     array(
         'content'     => "Monday: There's no place like home!",
         'description' => "Tweet",
@@ -58,6 +58,4 @@ $list = array(
         'url'         => "https://mobile.twitter.com/elonmusk/status/730592699011604481",
         'attributes'  => "_blank",
     ),
-);
-
-format::pre(random::element($list, 'DAY'));
+), 'DAY'));
