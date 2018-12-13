@@ -32,6 +32,8 @@ foreach ($user_agents as $agent)
 {
     echo user_agent::detect_browser($agent);
     echo '-';
+    echo user_agent::detect_operating_system($agent);
+    echo '-';
     echo user_agent::detect_device($agent);
     echo '-';
     echo user_agent::is_mobile($agent) ? 'Mobile' : 'Not mobile';
