@@ -42,3 +42,20 @@ format::pre(format::in_wizard('field', array(
     'second',
     'third',
 )));
+format::pre(format::multidimensional_array(array(
+    array(
+        99,
+        58,
+        12,
+    ),
+    array(
+        25,
+        10,
+        11,
+    ),
+    array(
+        11,
+        25,
+        70,
+    ),
+), 2, SORT_DESC));

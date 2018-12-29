@@ -22,8 +22,7 @@ if ( ! is_dir($destination))
     mkdir($destination);
 }
 
-$sorter = new sorter();
-$report = $sorter->deploy(array(
+$sorter = new sorter(array(
     'where_to_read_files'         => realpath('../outsource/sorter/source/') . DIRECTORY_SEPARATOR,
     'where_to_create_directories' => realpath('../outsource/sorter/destination/') . DIRECTORY_SEPARATOR,
     'number_of_directories'       => 10,
@@ -32,22 +31,7 @@ $report = $sorter->deploy(array(
     'types'                       => array('jpg'),
 ));
 
-format::pre($report['string']);
-format::pre($report['array'], TRUE);
-format::pre(sorter::multidimensional_array(array(
-    array(
-        99,
-        58,
-        12,
-    ),
-    array(
-        25,
-        10,
-        11,
-    ),
-    array(
-        11,
-        25,
-        70,
-    ),
-), 2, SORT_DESC));
+$deploy = $sorter->deploy();
+$report = $sorter->report();
+
+format::pre($report);
