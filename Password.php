@@ -20,3 +20,4 @@ format::pre(password::new_readable());
 format::pre(password::strength($string, 80));
 format::pre(password::encode($string));
 format::pre(password::decode($string));
+format::pre(password::digest($string));
