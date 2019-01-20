@@ -7,8 +7,8 @@
 | Developing and testing Directory_Lister class
 |
 | Please note that this script might get broken if your
-| file/folder names start with some of special characters. 
-| In that case go to Directory_Lister class and add them
+| file/folder names start with some of special characters.
+| In that case go to Directory_Lister and add them
 | to the $forbidden_characters variable.
 |
 | To enable local file links you should use some kind of browser extension:

@@ -11,8 +11,11 @@
 include '../vendor/autoload.php';
 
 use phplibrary\File as file;
+use phplibrary\Format as format;
 
-file::force_download(
-    'Liflet_DIS_Market.pdf',
-    'http://www.dis.rs/download/Liflet_DIS_Market.pdf'
+file::$image = array(
+    'location' => 'https://www.dis.rs/images/',
+    'default'  => 'download.png',
 );
+
+format::pre(file::image('logo.png'));

@@ -38,7 +38,7 @@ export::export_file(array(
             'number' => '22.56',
         ),
     ),
-    'type'       => 'xls',
+    'type'       => 'xlsx',
 ));
 
 format::pre(export::allowed_types());
