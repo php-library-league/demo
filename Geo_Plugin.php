@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Geo_Plugin as geo_plugin;
-use phplibrary\Format as format;
+use PHP_Library\League\Data\Geo_Plugin as geo_plugin;
+use PHP_Library\League\Format\Format as format;
 
-$geo_plugin = new geo_plugin();    
+$geo_plugin = new geo_plugin();
 format::pre($geo_plugin->data(), TRUE);

@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Dump as dump;
-use phplibrary\Format as format;
+use PHP_Library\League\SQL\Dump as dump;
+use PHP_Library\League\Format\Format as format;
 
 $command  = 'mysqldump';
 $location = 'C:/xampp/mysql/bin/mysqldump.exe';

@@ -10,7 +10,7 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Format as format;
+use PHP_Library\League\Format\Format as format;
 
 $bytes = format::bytes(715000, TRUE, 2);
 format::pre($bytes, TRUE);

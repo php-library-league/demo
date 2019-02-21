@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Random as random;
-use phplibrary\Format as format;
+use PHP_Library\League\Data\Random as random;
+use PHP_Library\League\Format\Format as format;
 
 format::pre(random::break_caching());
 format::pre(random::generate(4, 'STRING_ADVANCED'));

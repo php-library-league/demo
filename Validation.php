@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Validation as validation;
-use phplibrary\Format as format;
+use PHP_Library\League\Data\Validation as validation;
+use PHP_Library\League\Format\Format as format;
 
 format::pre(validation::extension(
     '90zlaya.jpeg',

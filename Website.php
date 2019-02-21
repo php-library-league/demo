@@ -10,7 +10,7 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Website as website;
+use PHP_Library\League\Data\Website as website;
 
 // ------------------------------------------------------------------
 // ---| Usage |------------------------------------------------------

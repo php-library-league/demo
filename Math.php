@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Math as math;
-use phplibrary\Format as format;
+use PHP_Library\League\Math\Math as math;
+use PHP_Library\League\Format\Format as format;
 
 $percentage = math::percentage(30, 50);
 format::pre($percentage);

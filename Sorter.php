@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Sorter as sorter;
-use phplibrary\Format as format;
+use PHP_Library\League\Files\Sorter as sorter;
+use PHP_Library\League\Format\Format as format;
 
 $destination  = realpath('../outsource/sorter/');
 $destination .= DIRECTORY_SEPARATOR;

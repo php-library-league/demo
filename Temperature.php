@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Temperature as temperature;
-use phplibrary\Format as format;
+use PHP_Library\League\Math\Temperature as temperature;
+use PHP_Library\League\Format\Format as format;
 
 $value = 300.7;
 

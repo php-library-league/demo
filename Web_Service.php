@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Web_Service as web_service;
-use phplibrary\Format as format;
+use PHP_Library\League\Services\Web_Service as web_service;
+use PHP_Library\League\Format\Format as format;
 
 $check_file = web_service::check_file(
     'http://php.net/images/logos/elephpant-running-78x48.gif'

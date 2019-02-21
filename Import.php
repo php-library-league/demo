@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Format as format;
-use phplibrary\Import as import;
+use PHP_Library\League\Files\Import as import;
+use PHP_Library\League\Format\Format as format;
 
 $file_location = realpath('../outsource/import/example1.xls');
 $data          = import::import_data($file_location);

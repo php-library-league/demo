@@ -19,8 +19,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Directory_Lister as directory_lister;
-use phplibrary\Format as format;
+use PHP_Library\League\Files\Directory_Lister as directory_lister;
+use PHP_Library\League\Format\Format as format;
 
 $listing = directory_lister::listing(array(
     'directory'  => realpath('../outsource/directory_lister/') . DIRECTORY_SEPARATOR,

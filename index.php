@@ -10,14 +10,17 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Directory_Lister as directory_lister;
+use PHP_Library\League\Files\Directory_Lister as directory_lister;
+use PHP_Library\League\Format\Format as format;
 
 $listing = directory_lister::listing(array(
     'directory' => realpath('') . DIRECTORY_SEPARATOR,
-    'method'    => 'files',
+    'method'    => 'crawl',
     'print'     => FALSE,
     'types'     => array('php'),
 ));
+
+format::pre($listing['listing'], FALSE);
 
 echo '<!DOCTYPE html>';
 echo '<head>';

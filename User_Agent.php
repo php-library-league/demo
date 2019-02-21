@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\User_Agent as user_agent;
-use phplibrary\Format as format;
+use PHP_Library\League\Data\User_Agent as user_agent;
+use PHP_Library\League\Format\Format as format;
 
 format::pre(user_agent::list_browsers(), FALSE);
 format::pre(user_agent::list_devices(), FALSE);
@@ -32,7 +32,7 @@ foreach ($user_agents as $agent)
 {
     echo user_agent::detect_browser($agent);
     echo '-';
-    echo user_agent::detect_operating_system($agent);
+    echo user_agent::detect_operating_system($agent)['name'];
     echo '-';
     echo user_agent::detect_device($agent);
     echo '-';

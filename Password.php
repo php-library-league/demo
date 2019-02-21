@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\Password as password;
-use phplibrary\Format as format;
+use PHP_Library\League\Data\Password as password;
+use PHP_Library\League\Format\Format as format;
 
 $string = 'T3stPa$$w0r6';
 

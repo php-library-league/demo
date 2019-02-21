@@ -10,8 +10,8 @@
 */
 include '../vendor/autoload.php';
 
-use phplibrary\File as file;
-use phplibrary\Format as format;
+use PHP_Library\League\Files\File as file;
+use PHP_Library\League\Format\Format as format;
 
 file::$image = array(
     'location' => 'https://www.dis.rs/images/',
