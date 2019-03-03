@@ -8,12 +8,12 @@
 |
 | -------------------------------------------------------------------
 */
-include '../vendor/autoload.php';
+include_once '../../../vendor/autoload.php';
 
-use PHP_Library\League\Files\Sorter as sorter;
-use PHP_Library\League\Format\Format as format;
+use PHP_Library\Core\Files\Sorter as sorter;
+use PHP_Library\Core\Format\Format as format;
 
-$destination  = realpath('../outsource/sorter/');
+$destination  = realpath('../../../outsource/sorter/');
 $destination .= DIRECTORY_SEPARATOR;
 $destination .= 'destination';
 
@@ -23,8 +23,8 @@ if ( ! is_dir($destination))
 }
 
 $sorter = new sorter(array(
-    'where_to_read_files'         => realpath('../outsource/sorter/source/') . DIRECTORY_SEPARATOR,
-    'where_to_create_directories' => realpath('../outsource/sorter/destination/') . DIRECTORY_SEPARATOR,
+    'where_to_read_files'         => realpath('../../../outsource/sorter/source/') . DIRECTORY_SEPARATOR,
+    'where_to_create_directories' => realpath('../../../outsource/sorter/destination/') . DIRECTORY_SEPARATOR,
     'number_of_directories'       => 10,
     'folder_sufix'                => '000',
     'operation'                   => 'c',

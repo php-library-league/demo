@@ -8,9 +8,9 @@
 |
 | -------------------------------------------------------------------
 */
-include '../vendor/autoload.php';
+include_once '../../../vendor/autoload.php';
 
-use PHP_Library\League\Format\Format as format;
+use PHP_Library\Core\Format\Format as format;
 
 $bytes = format::bytes(715000, TRUE, 2);
 format::pre($bytes, TRUE);

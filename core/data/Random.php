@@ -8,10 +8,10 @@
 |
 | -------------------------------------------------------------------
 */
-include '../vendor/autoload.php';
+include_once '../../../vendor/autoload.php';
 
-use PHP_Library\League\Data\Random as random;
-use PHP_Library\League\Format\Format as format;
+use PHP_Library\Core\Data\Random as random;
+use PHP_Library\Core\Format\Format as format;
 
 format::pre(random::break_caching());
 format::pre(random::generate(4, 'STRING_ADVANCED'));

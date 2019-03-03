@@ -8,12 +8,12 @@
 |
 | -------------------------------------------------------------------
 */
-include '../vendor/autoload.php';
+include_once '../../../vendor/autoload.php';
 
-use PHP_Library\League\Files\Import as import;
-use PHP_Library\League\Format\Format as format;
+use PHP_Library\Core\Files\Import as import;
+use PHP_Library\Core\Format\Format as format;
 
-$file_location = realpath('../outsource/import/example1.xls');
+$file_location = realpath('../../../outsource/import/example1.xls');
 $data          = import::import_data($file_location);
 
 if ($data)

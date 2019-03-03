@@ -8,10 +8,10 @@
 |
 | -------------------------------------------------------------------
 */
-include '../vendor/autoload.php';
+include_once '../../../vendor/autoload.php';
 
-use PHP_Library\League\SQL\Dump as dump;
-use PHP_Library\League\Format\Format as format;
+use PHP_Library\Core\SQL\Dump as dump;
+use PHP_Library\Core\Format\Format as format;
 
 $command  = 'mysqldump';
 $location = 'C:/xampp/mysql/bin/mysqldump.exe';
@@ -22,7 +22,7 @@ if (file_exists($location))
 }
 
 $destination = '';
-$location    = realpath('../outsource/');
+$location    = realpath('../../../outsource/');
 $location   .= DIRECTORY_SEPARATOR;
 
 if (file_exists($location))

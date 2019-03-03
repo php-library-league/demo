@@ -8,9 +8,9 @@
 |
 | -------------------------------------------------------------------
 */
-include '../vendor/autoload.php';
+include_once '../../../vendor/autoload.php';
 
-use PHP_Library\League\Data\Website as website;
+use PHP_Library\Core\Data\Website as website;
 
 // ------------------------------------------------------------------
 // ---| Usage |------------------------------------------------------

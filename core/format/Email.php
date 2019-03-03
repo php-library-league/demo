@@ -8,10 +8,10 @@
 |
 | -------------------------------------------------------------------
 */
-include '../vendor/autoload.php';
+include_once '../../../vendor/autoload.php';
 
-use PHP_Library\League\Format\Email as email;
-use PHP_Library\League\Format\Format as format;
+use PHP_Library\Core\Format\Email as email;
+use PHP_Library\Core\Format\Format as format;
 
 $email     = 'Contact@ZlatanStajic.com';
 $mailto    = email::mailto($email);

@@ -11,22 +11,17 @@
 | In that case go to Directory_Lister and add them
 | to the $forbidden_characters variable.
 |
-| To enable local file links you should use some kind of browser extension:
-| Firefox: https://addons.mozilla.org/en-US/firefox/addon/local-filesystem-links/
-| Chrome: https://chrome.google.com/webstore/detail/enable-local-file-links/nikfmfgobenbhmocjaaboihbeocackld
-|
 | -------------------------------------------------------------------
 */
-include '../vendor/autoload.php';
+include_once '../../../vendor/autoload.php';
 
-use PHP_Library\League\Files\Directory_Lister as directory_lister;
-use PHP_Library\League\Format\Format as format;
+use PHP_Library\Core\Files\Directory_Lister as directory_lister;
+use PHP_Library\Core\Format\Format as format;
 
 $listing = directory_lister::listing(array(
-    'directory'  => realpath('../outsource/directory_lister/') . DIRECTORY_SEPARATOR,
+    'directory'  => realpath('../../../outsource/directory_lister/') . DIRECTORY_SEPARATOR,
     'method'     => 'crawl',
     'print'      => FALSE,
-    'display'    => FALSE,
     'reverse'    => TRUE,
     'delimiter'  => 'php',
     'date_start' => '01-01',

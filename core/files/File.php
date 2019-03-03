@@ -8,10 +8,10 @@
 |
 | -------------------------------------------------------------------
 */
-include '../vendor/autoload.php';
+include_once '../../../vendor/autoload.php';
 
-use PHP_Library\League\Files\File as file;
-use PHP_Library\League\Format\Format as format;
+use PHP_Library\Core\Files\File as file;
+use PHP_Library\Core\Format\Format as format;
 
 file::$image = array(
     'location' => 'https://www.dis.rs/images/',
