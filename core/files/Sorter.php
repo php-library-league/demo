@@ -11,7 +11,7 @@
 include_once '../../../vendor/autoload.php';
 
 use PHP_Library\Core\Files\Sorter as sorter;
-use PHP_Library\Core\Format\Format as format;
+use PHP_Library\Core\Arrangements\Format as format;
 
 $destination  = realpath('../../../outsource/sorter/');
 $destination .= DIRECTORY_SEPARATOR;

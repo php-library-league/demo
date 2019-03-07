@@ -11,7 +11,7 @@
 include_once '../../../vendor/autoload.php';
 
 use PHP_Library\Core\SQL\Dump as dump;
-use PHP_Library\Core\Format\Format as format;
+use PHP_Library\Core\Arrangements\Format as format;
 
 $command  = 'mysqldump';
 $location = 'C:/xampp/mysql/bin/mysqldump.exe';
@@ -40,9 +40,9 @@ $dump = new dump(array(
 
 if ($dump->mysql())
 {
-    format::pre($dump->get_messages(), TRUE);
+    format::pre($dump->get_message());
 }
 else
 {
-    format::pre($dump->get_messages('ERROR'), TRUE);
+    format::pre($dump->get_error());
 }

@@ -11,7 +11,7 @@
 include_once '../../../vendor/autoload.php';
 
 use PHP_Library\Core\Data\Password as password;
-use PHP_Library\Core\Format\Format as format;
+use PHP_Library\Core\Arrangements\Format as format;
 
 $string = 'T3stPa$$w0r6';
 

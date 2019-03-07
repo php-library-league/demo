@@ -11,7 +11,7 @@
 include_once '../../../vendor/autoload.php';
 
 use PHP_Library\Core\Services\Web_Service as web_service;
-use PHP_Library\Core\Format\Format as format;
+use PHP_Library\Core\Arrangements\Format as format;
 
 $web_service = new web_service('http://php.net/images/logos/elephpant-running-78x48.gif');
 

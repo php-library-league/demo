@@ -11,7 +11,7 @@
 include_once '../../../vendor/autoload.php';
 
 use PHP_Library\Core\Files\File as file;
-use PHP_Library\Core\Format\Format as format;
+use PHP_Library\Core\Arrangements\Format as format;
 
 file::$image = array(
     'location' => 'https://www.dis.rs/images/',

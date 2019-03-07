@@ -11,7 +11,7 @@
 include_once '../../../vendor/autoload.php';
 
 use PHP_Library\Core\Data\User_Agent as user_agent;
-use PHP_Library\Core\Format\Format as format;
+use PHP_Library\Core\Arrangements\Format as format;
 
 format::pre(user_agent::list_browsers(), FALSE);
 format::pre(user_agent::list_devices(), FALSE);

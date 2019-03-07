@@ -11,7 +11,7 @@
 include_once '../../../vendor/autoload.php';
 
 use PHP_Library\Core\Data\Random as random;
-use PHP_Library\Core\Format\Format as format;
+use PHP_Library\Core\Arrangements\Format as format;
 
 format::pre(random::break_caching());
 format::pre(random::generate(4, 'STRING_ADVANCED'));

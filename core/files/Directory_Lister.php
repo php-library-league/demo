@@ -16,7 +16,7 @@
 include_once '../../../vendor/autoload.php';
 
 use PHP_Library\Core\Files\Directory_Lister as directory_lister;
-use PHP_Library\Core\Format\Format as format;
+use PHP_Library\Core\Arrangements\Format as format;
 
 $listing = directory_lister::listing(array(
     'directory'  => realpath('../../../outsource/directory_lister/') . DIRECTORY_SEPARATOR,

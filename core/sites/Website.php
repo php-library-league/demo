@@ -10,7 +10,7 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Data\Website as website;
+use PHP_Library\Core\Sites\Website as website;
 
 // ------------------------------------------------------------------
 // ---| Usage |------------------------------------------------------
@@ -100,16 +100,16 @@ echo PHP_EOL;
 // Show name and image
 echo '
     <div>
-        <h1>Welcome to the ' . $website->name . '</h1>
+        <h1>Welcome to the ' . $website->get_name() . '</h1>
         <img src="' . $website->images('php-logo') . '">
     </div>
     <br/>
 ';
 
-if (isset($website->server['referer']))
+if (isset($website->get_server()['referer']))
 {
     echo 'You were appointed to this page from: ';
-    echo $website->server['referer'];
+    echo $website->get_server()['referer'];
     echo '<br/>';
 }
 

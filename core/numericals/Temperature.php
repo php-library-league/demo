@@ -10,8 +10,8 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Math\Temperature as temperature;
-use PHP_Library\Core\Format\Format as format;
+use PHP_Library\Core\Numericals\Temperature as temperature;
+use PHP_Library\Core\Arrangements\Format as format;
 
 $value = 300.7;
 
@@ -22,9 +22,9 @@ $f_to_k = temperature::f_to_k($k_to_f['value']);
 $c_to_f = temperature::c_to_f($f_to_c['value']);
 $c_to_k = temperature::c_to_k($f_to_c['value']);
 
-format::pre($value . ' K is ' . $k_to_c['sign']);
-format::pre($value . ' K is ' . $k_to_f['sign']);
-format::pre($k_to_f['sign'] . ' is ' . $f_to_c['sign']);
-format::pre($k_to_f['sign'] . ' is ' . $f_to_k['sign']);
-format::pre($f_to_c['sign'] . ' is ' . $c_to_f['sign']);
-format::pre($f_to_c['sign'] . ' is ' . $c_to_k['sign']);
+format::pre($value . ' K is ' . $k_to_c['signed']);
+format::pre($value . ' K is ' . $k_to_f['signed']);
+format::pre($k_to_f['signed'] . ' is ' . $f_to_c['signed']);
+format::pre($k_to_f['signed'] . ' is ' . $f_to_k['signed']);
+format::pre($f_to_c['signed'] . ' is ' . $c_to_f['signed']);
+format::pre($f_to_c['signed'] . ' is ' . $c_to_k['signed']);
