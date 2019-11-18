@@ -1,12 +1,14 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| EXPORT
-| -------------------------------------------------------------------
-|
-| Developing and testing Export class
-|
-| -------------------------------------------------------------------
+/**
+* Export
+*
+* Export files using customisation of PHPOffice/PhpSpreadsheet
+* Location: https://github.com/PHPOffice/PhpSpreadsheet
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Files
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

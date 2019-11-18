@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| FORMAT
-| -------------------------------------------------------------------
-|
-| Developing and testing Format class
-|
-| -------------------------------------------------------------------
+/**
+* Format
+*
+* Format related methods
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Arrangements
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 
@@ -21,7 +22,6 @@ format::pre($website);
 $text   = '<b>Lorem Ipsum</b> is simply <i>dummy</i> text of the printing and typesetting industry.';
 $string = format::string($text, 0, 50);
 format::pre($string);
-
 
 format::pre(format::number(20.00, FALSE, 1));
 format::pre(format::price_format(104955.54));

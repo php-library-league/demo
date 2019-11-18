@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| PASSWORD
-| -------------------------------------------------------------------
-|
-| Developing and testing Password class
-|
-| -------------------------------------------------------------------
+/**
+* Password
+*
+* Works with password related data
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Data
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

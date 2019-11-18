@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| TEMPERATURE
-| -------------------------------------------------------------------
-|
-| Developing and testing Temperature class
-|
-| -------------------------------------------------------------------
+/**
+* Temperature
+*
+* Working with temperature conversions
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Numericals
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

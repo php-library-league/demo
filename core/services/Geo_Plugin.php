@@ -1,12 +1,14 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| GEO PLUGIN
-| -------------------------------------------------------------------
-|
-| Developing and testing Geo_Plugin class
-|
-| -------------------------------------------------------------------
+/**
+* Geo_Plugin
+*
+* Geography location and other server and browser
+* data collected from visitor
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Services
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

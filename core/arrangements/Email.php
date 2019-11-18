@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| EMAIL
-| -------------------------------------------------------------------
-|
-| Developing and testing Email class
-|
-| -------------------------------------------------------------------
+/**
+* Email
+*
+* Email-related operations
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Arrangements
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

@@ -1,17 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| DIRECTORY LISTER
-| -------------------------------------------------------------------
-|
-| Developing and testing Directory_Lister class
-|
-| Please note that this script might get broken if your
-| file/folder names start with some of special characters.
-| In that case go to Directory_Lister and add them
-| to the $forbidden_characters variable.
-|
-| -------------------------------------------------------------------
+/**
+* Directory_Lister
+*
+* Directory content retrieval
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Files
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

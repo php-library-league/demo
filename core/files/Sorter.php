@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| SORTER
-| -------------------------------------------------------------------
-|
-| Developing and testing Sorter class
-|
-| -------------------------------------------------------------------
+/**
+* Sorter
+*
+* Sortes files to multiple folders
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Files
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

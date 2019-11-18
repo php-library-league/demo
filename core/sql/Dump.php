@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| DUMP
-| -------------------------------------------------------------------
-|
-| Developing and testing Dump class
-|
-| -------------------------------------------------------------------
+/**
+* Dump
+*
+* Dump database from SQL server
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     SQL
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

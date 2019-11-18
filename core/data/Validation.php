@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| VALIDATION
-| -------------------------------------------------------------------
-|
-| Developing and testing Validation class
-|
-| -------------------------------------------------------------------
+/**
+* Validation
+*
+* Validation methods
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Data
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| WEB SERVICE
-| -------------------------------------------------------------------
-|
-| Developing and testing Web_Service class
-|
-| -------------------------------------------------------------------
+/**
+* Web_Service
+*
+* Web service related data
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Services
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

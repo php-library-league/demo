@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| USER AGENT
-| -------------------------------------------------------------------
-|
-| Developing and testing User_Agent class
-|
-| -------------------------------------------------------------------
+/**
+* User_Agent
+*
+* Working with user agent related data
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Data
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

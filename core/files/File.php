@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| FILE
-| -------------------------------------------------------------------
-|
-| Developing and testing File class
-|
-| -------------------------------------------------------------------
+/**
+* File
+*
+* File-related operations
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Files
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

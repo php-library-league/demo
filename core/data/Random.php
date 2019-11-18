@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| RANDOM
-| -------------------------------------------------------------------
-|
-| Developing and testing Random class
-|
-| -------------------------------------------------------------------
+/**
+* Random
+*
+* Random-related data
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Data
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

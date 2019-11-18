@@ -1,12 +1,14 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| IMPORT
-| -------------------------------------------------------------------
-|
-| Developing and testing Import class
-|
-| -------------------------------------------------------------------
+/**
+* Import
+*
+* Import data from file using customisation of PHPOffice/PhpSpreadsheet
+* Location: https://github.com/PHPOffice/PhpSpreadsheet
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Files
+* @author       Ivan Skokić <iskokic@gmail.com>
 */
 include_once '../../../vendor/autoload.php';
 

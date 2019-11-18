@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| DATE TIME FORMAT
-| -------------------------------------------------------------------
-|
-| Developing and testing DATE_TIME_FORMAT class
-|
-| -------------------------------------------------------------------
+/**
+* Date_Time_Format
+*
+* Date and Time formating, validating, comparing, converting...
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Arrangements
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 

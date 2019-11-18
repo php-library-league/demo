@@ -1,12 +1,13 @@
 <?php
-/*
-| -------------------------------------------------------------------
-| MATH
-| -------------------------------------------------------------------
-|
-| Developing and testing Math class
-|
-| -------------------------------------------------------------------
+/**
+* Math
+*
+* Mathematical operations and calculations
+*
+* @package      PHP_Library
+* @subpackage   Core
+* @category     Numericals
+* @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
 include_once '../../../vendor/autoload.php';
 
