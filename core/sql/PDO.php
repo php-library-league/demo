@@ -11,14 +11,14 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\SQL\PDO as pdo;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\SQL\PDO;
+use PHP_Library\Core\Arrangements\Format;
 
-$pdo = new pdo();
+$pdo = new PDO();
 
 if ($pdo->has_errors())
 {
-    format::pre($pdo->get_error());
+    Format::pre($pdo->get_error());
 }
 else
 {
@@ -28,5 +28,5 @@ else
     $result    = $connection->query($query);
     $statement = $result->fetch();
 
-    format::pre($statement);
+    Format::pre($statement);
 }

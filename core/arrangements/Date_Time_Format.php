@@ -11,29 +11,29 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Arrangements\Date_Time_Format as date_time_format;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\Arrangements\Date_Time_Format;
+use PHP_Library\Core\Arrangements\Format;
 
-format::pre('Current datetime: ' . date_time_format::current());
+Format::pre('Current datetime: ' . Date_Time_Format::current());
 
 $user_date = '08.11.2017 16:07';
 
-format::pre('User date: ' . $user_date);
+Format::pre('User date: ' . $user_date);
 
-$database_date = date_time_format::format_to_database($user_date);
-$user_date     = date_time_format::format_to_user($database_date);
+$database_date = Date_Time_Format::format_to_database($user_date);
+$user_date     = Date_Time_Format::format_to_user($database_date);
 
-format::pre('Database date: ' . $database_date);
-format::pre('User date: ' . $user_date);
+Format::pre('Database date: ' . $database_date);
+Format::pre('User date: ' . $user_date);
 
-format::pre('User date format: ' . date_time_format::format($user_date, TRUE));
-format::pre('Database date format: ' . date_time_format::format($database_date, TRUE));
-format::pre('Minutes to hours: ' . date_time_format::minutes_to_hours(61));
-format::pre('Hours to minutes: ' . date_time_format::hours_to_minutes('61:55'));
-format::pre('Format: ' . date_time_format::format('2017-10-23 15:57:19'));
-format::pre('Number to month: ' . date_time_format::number_to_month(date('n'), 'english'));
-format::pre('Number to day: ' . date_time_format::number_to_day(date('N'), 'english'));
-format::pre('Days before: ' . date_time_format::days_before(7));
-format::pre('Days after: ' . date_time_format::days_after(7));
-format::pre(date_time_format::get_days('serbian', 3, FALSE));
-format::pre(date_time_format::get_months('serbian', 3));
+Format::pre('User date format: ' . Date_Time_Format::format($user_date, TRUE));
+Format::pre('Database date format: ' . Date_Time_Format::format($database_date, TRUE));
+Format::pre('Minutes to hours: ' . Date_Time_Format::minutes_to_hours(61));
+Format::pre('Hours to minutes: ' . Date_Time_Format::hours_to_minutes('61:55'));
+Format::pre('Format: ' . Date_Time_Format::format('2017-10-23 15:57:19'));
+Format::pre('Number to month: ' . Date_Time_Format::number_to_month(date('n'), 'english'));
+Format::pre('Number to day: ' . Date_Time_Format::number_to_day(date('N'), 'english'));
+Format::pre('Days before: ' . Date_Time_Format::days_before(7));
+Format::pre('Days after: ' . Date_Time_Format::days_after(7));
+Format::pre(Date_Time_Format::get_days('serbian', 3, FALSE));
+Format::pre(Date_Time_Format::get_months('serbian', 3));

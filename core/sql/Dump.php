@@ -11,8 +11,8 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\SQL\Dump as dump;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\SQL\Dump;
+use PHP_Library\Core\Arrangements\Format;
 
 $command  = 'mysqldump';
 $location = 'C:/xampp/mysql/bin/mysqldump.exe';
@@ -31,7 +31,7 @@ if (file_exists($location))
     $destination = $location;
 }
 
-$dump = new dump(array(
+$dump = new Dump(array(
     'command'     => $command,
     'destination' => $destination,
     'databases'   => array(
@@ -41,9 +41,9 @@ $dump = new dump(array(
 
 if ($dump->mysql())
 {
-    format::pre($dump->get_message());
+    Format::pre($dump->get_message());
 }
 else
 {
-    format::pre($dump->get_error());
+    Format::pre($dump->get_error());
 }

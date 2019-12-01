@@ -12,10 +12,10 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Files\Export as export;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\Files\Export;
+use PHP_Library\Core\Arrangements\Format;
 
-export::export_file(array(
+Export::export_file(array(
     'data_types' => array(
         array(
             'index' => 0,
@@ -43,4 +43,4 @@ export::export_file(array(
     'type'       => 'xlsx',
 ));
 
-format::pre(export::allowed_types());
+Format::pre(Export::allowed_types());

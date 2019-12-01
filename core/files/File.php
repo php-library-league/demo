@@ -11,12 +11,12 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Files\File as file;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\Files\File;
+use PHP_Library\Core\Arrangements\Format;
 
-file::$image = array(
-    'location' => 'https://www.dis.rs/images/',
-    'default'  => 'download.png',
+File::$image = array(
+    'location' => 'https://raw.githubusercontent.com/php-library-league/assets/1.0.0/img/',
+    'default'  => 'phplibrary-logo-blue.png',
 );
 
-format::pre(file::image('logo.png'));
+Format::pre(File::image('logo.png'));

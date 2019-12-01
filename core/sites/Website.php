@@ -11,17 +11,17 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Sites\Website as website;
+use PHP_Library\Core\Sites\Website;
 
 /* -------------------------------------------------------------------------- */
 /* ---[ Usage ]-------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
 // Instance of Website class
-$website = new website(
+$website = new Website(
     array(
         'name'        => 'PHP Library',
-        'host'        => 'http://localhost/_develop/php-library/',
+        'host'        => 'http://localhost/_develop/open-source/php-library/',
         'made'        => '2017',
         'language'    => 'EN',
         'description' => 'PHP Library is set of classes containing most useful methods and variables for Web Development.',

@@ -11,13 +11,13 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Arrangements\Email as email;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\Arrangements\Email;
+use PHP_Library\Core\Arrangements\Format;
 
 $email     = 'Contact@ZlatanStajic.com';
-$mailto    = email::mailto($email);
-$validated = empty(email::validate($email)) ? 'Invalid' : 'Valid';
+$mailto    = Email::mailto($email);
+$validated = empty(Email::validate($email)) ? 'Invalid' : 'Valid';
 
-format::pre($validated, TRUE);
-format::pre(email::show($email), TRUE);
-format::pre($mailto, TRUE);
+Format::pre($validated, TRUE);
+Format::pre(Email::show($email), TRUE);
+Format::pre($mailto, TRUE);

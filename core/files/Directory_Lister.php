@@ -11,10 +11,10 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Files\Directory_Lister as directory_lister;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\Files\Directory_Lister;
+use PHP_Library\Core\Arrangements\Format;
 
-$listing = directory_lister::listing(array(
+$listing = Directory_Lister::listing(array(
     'directory'  => realpath('../../../outsource/directory_lister/') . DIRECTORY_SEPARATOR,
     'method'     => 'crawl',
     'print'      => FALSE,
@@ -25,4 +25,4 @@ $listing = directory_lister::listing(array(
     'years'      => array(2016),
     'types'      => array('png'),
 ));
-format::pre($listing, TRUE);
+Format::pre($listing, TRUE);

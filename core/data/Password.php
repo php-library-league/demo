@@ -11,14 +11,14 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Data\Password as password;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\Data\Password;
+use PHP_Library\Core\Arrangements\Format;
 
 $string = 'T3stPa$$w0r6';
 
-format::pre(password::new_unreadable());
-format::pre(password::new_readable());
-format::pre(password::strength($string, 80));
-format::pre(password::encode($string));
-format::pre(password::decode($string));
-format::pre(password::digest($string));
+Format::pre(Password::new_unreadable());
+Format::pre(Password::new_readable());
+Format::pre(Password::strength($string, 80));
+Format::pre(Password::encode($string));
+Format::pre(Password::decode($string));
+Format::pre(Password::digest($string));

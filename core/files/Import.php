@@ -12,17 +12,17 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Files\Import as import;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\Files\Import;
+use PHP_Library\Core\Arrangements\Format;
 
 $file_location = realpath('../../../outsource/import/example1.xls');
-$data          = import::import_data($file_location);
+$data          = Import::import_data($file_location);
 
 if ($data)
 {
-    format::pre($data);
+    Format::pre($data);
 }
 else
 {
-    format::pre('No file/data for import.');
+    Format::pre('No file/data for import.');
 }

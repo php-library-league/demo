@@ -11,12 +11,12 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Data\Random as random;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\Data\Random;
+use PHP_Library\Core\Arrangements\Format;
 
-format::pre(random::break_caching());
-format::pre(random::generate(4, 'STRING_ADVANCED'));
-format::pre(random::element(array(
+Format::pre(Random::break_caching());
+Format::pre(Random::generate(4, 'STRING_ADVANCED'));
+Format::pre(Random::element(array(
     array(
         'content'     => "Monday: There's no place like home!",
         'description' => "Tweet",

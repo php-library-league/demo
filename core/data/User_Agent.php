@@ -11,12 +11,12 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Data\User_Agent as user_agent;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\Data\User_Agent;
+use PHP_Library\Core\Arrangements\Format;
 
-format::pre(user_agent::list_browsers(), FALSE);
-format::pre(user_agent::list_devices(), FALSE);
-format::pre(user_agent::list_crawlers(), FALSE);
+Format::pre(User_Agent::list_browsers(), FALSE);
+Format::pre(User_Agent::list_devices(), FALSE);
+Format::pre(User_Agent::list_crawlers(), FALSE);
 
 $user_agents = array(
     'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_3 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A432 Safari/604.1',
@@ -31,14 +31,14 @@ $user_agents = array(
 
 foreach ($user_agents as $agent)
 {
-    echo user_agent::detect_browser($agent);
+    echo User_Agent::detect_browser($agent);
     echo '-';
-    echo user_agent::detect_operating_system($agent)['name'];
+    echo User_Agent::detect_operating_system($agent)['name'];
     echo '-';
-    echo user_agent::detect_device($agent);
+    echo User_Agent::detect_device($agent);
     echo '-';
-    echo user_agent::is_mobile($agent) ? 'Mobile' : 'Not mobile';
+    echo User_Agent::is_mobile($agent) ? 'Mobile' : 'Not mobile';
     echo '-';
-    echo user_agent::is_crawler($agent) ? 'Crawler' : 'Real';
+    echo User_Agent::is_crawler($agent) ? 'Crawler' : 'Real';
     echo '<br/>';
 }

@@ -11,17 +11,17 @@
 */
 include_once '../vendor/autoload.php';
 
-use PHP_Library\Core\Files\Directory_Lister as directory_lister;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\Files\Directory_Lister;
+use PHP_Library\Core\Arrangements\Format;
 
-$listing = directory_lister::listing(array(
+$listing = Directory_Lister::listing(array(
     'directory' => realpath('') . DIRECTORY_SEPARATOR,
     'method'    => 'crawl',
     'print'     => FALSE,
     'types'     => array('php'),
 ));
 
-format::pre($listing['listing'], FALSE);
+Format::pre($listing['listing'], FALSE);
 
 echo '<!DOCTYPE html>';
 echo '<head>';

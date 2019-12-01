@@ -11,10 +11,10 @@
 */
 include_once '../../../vendor/autoload.php';
 
-use PHP_Library\Core\Data\Validation as validation;
-use PHP_Library\Core\Arrangements\Format as format;
+use PHP_Library\Core\Data\Validation;
+use PHP_Library\Core\Arrangements\Format;
 
-format::pre(validation::extension(
+Format::pre(Validation::extension(
     '90zlaya.jpeg',
     array('jpeg'),
     'image/jpeg',
@@ -23,5 +23,5 @@ format::pre(validation::extension(
 
 $string = 'Ovo je test NAZIV 12  razmak 34 ima i đĐčćŠ.png';
 
-format::pre(validation::rewrite($string));
-format::pre(validation::rewrite_special($string));
+Format::pre(Validation::rewrite($string));
+Format::pre(Validation::rewrite_special($string));
