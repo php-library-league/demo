@@ -9,13 +9,13 @@
 * @category     Index
 * @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
-include_once '../vendor/autoload.php';
+include_once __DIR__ . '/../vendor/autoload.php';
 
 use PHP_Library\Core\Files\Directory_Lister;
 use PHP_Library\Core\Arrangements\Format;
 
 $listing = Directory_Lister::listing(array(
-    'directory' => realpath('') . DIRECTORY_SEPARATOR,
+    'directory' => __DIR__ . DIRECTORY_SEPARATOR,
     'method'    => 'crawl',
     'print'     => FALSE,
     'types'     => array('php'),

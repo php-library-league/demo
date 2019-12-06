@@ -9,7 +9,7 @@
 * @category     Sites
 * @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
-include_once '../../../vendor/autoload.php';
+include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Sites\Website;
 

@@ -10,12 +10,12 @@
 * @category     Files
 * @author       Ivan Skokić <iskokic@gmail.com>
 */
-include_once '../../../vendor/autoload.php';
+include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Files\Import;
 use PHP_Library\Core\Arrangements\Format;
 
-$file_location = realpath('../../../outsource/import/example1.xls');
+$file_location = __DIR__ . '/../../../outsource/import/example1.xls';
 $data          = Import::import_data($file_location);
 
 if ($data)

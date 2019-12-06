@@ -20,6 +20,9 @@ mv outsource-1.1.0/ outsource/
 
 # Unzip archive
 unzip outsource/archive.zip -d outsource/
+
+# Give full permissions to all outsource folders and files
+chmod -R 0777 outsource/
 ```
 
 You can access any script from one place by opening [index.php] in your browser.

@@ -9,12 +9,12 @@
 * @category     SQL
 * @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
-include_once '../../../vendor/autoload.php';
+include_once __DIR__ . '/../../../vendor/autoload.php';
 
-use PHP_Library\Core\SQL\PDO;
+use PHP_Library\Core\SQL\PDO_Connection;
 use PHP_Library\Core\Arrangements\Format;
 
-$pdo = new PDO();
+$pdo = new PDO_Connection();
 
 if ($pdo->has_errors())
 {

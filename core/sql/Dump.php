@@ -9,7 +9,7 @@
 * @category     SQL
 * @author       Zlatan Stajić <contact@zlatanstajic.com>
 */
-include_once '../../../vendor/autoload.php';
+include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\SQL\Dump;
 use PHP_Library\Core\Arrangements\Format;
@@ -23,8 +23,7 @@ if (file_exists($location))
 }
 
 $destination = '';
-$location    = realpath('../../../outsource/');
-$location   .= DIRECTORY_SEPARATOR;
+$location    = __DIR__ . '/../../../outsource/';
 
 if (file_exists($location))
 {
