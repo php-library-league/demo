@@ -21,7 +21,7 @@ use PHP_Library\Core\Sites\Website;
 $website = new Website(
     array(
         'name'        => 'PHP Library',
-        'host'        => 'http://localhost/_develop/open-source/php-library/',
+        'host'        => 'http://localhost/_develop/php-library/',
         'made'        => '2017',
         'language'    => 'EN',
         'description' => 'PHP Library is set of classes containing most useful methods and variables for Web Development.',
