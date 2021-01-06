@@ -1,14 +1,14 @@
 <?php
 /**
-* Index
-*
-* Printing contents of demo folder
-*
-* @package      PHP_Library
-* @subpackage   Root
-* @category     Index
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * Index
+ *
+ * Printing contents of demo folder
+ *
+ * @package      PHP_Library
+ * @subpackage   Root
+ * @category     Index
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../vendor/autoload.php';
 
 use PHP_Library\Core\Files\Directory_Lister;
@@ -24,8 +24,9 @@ $listing = Directory_Lister::listing(array(
 Format::pre($listing['listing'], FALSE);
 
 echo '<!DOCTYPE html>';
+echo '<html lang="en">';
 echo '<head>';
-echo '<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>';
+echo '<meta name="viewport" content="width=device-width, initial-scale=1"/>';
 echo '<title>Demo</title>';
 echo '</head>';
 echo '<body>';
@@ -57,3 +58,4 @@ foreach ($listing['listing'] as $item)
 
 echo '</ol>';
 echo '</body>';
+echo '</html>';
