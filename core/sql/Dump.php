@@ -1,14 +1,14 @@
 <?php
 /**
-* Dump
-*
-* Dump database from SQL server
-*
-* @package      PHP_Library
-* @subpackage   Core
-* @category     SQL
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * Dump
+ *
+ * Dump database from SQL server
+ *
+ * @package      PHP_Library
+ * @subpackage   Core
+ * @category     SQL
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\SQL\Dump;

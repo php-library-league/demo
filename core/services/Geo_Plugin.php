@@ -1,15 +1,15 @@
 <?php
 /**
-* Geo_Plugin
-*
-* Geography location and other server and browser
-* data collected from visitor
-*
-* @package      PHP_Library
-* @subpackage   Core
-* @category     Services
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * Geo_Plugin
+ *
+ * Geography location and other server and browser
+ * data collected from visitor
+ *
+ * @package      PHP_Library
+ * @subpackage   Core
+ * @category     Services
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Services\Geo_Plugin;

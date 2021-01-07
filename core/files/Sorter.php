@@ -1,14 +1,14 @@
 <?php
 /**
-* Sorter
-*
-* Sortes files to multiple folders
-*
-* @package      PHP_Library
-* @subpackage   Core
-* @category     Files
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * Sorter
+ *
+ * Sortes files to multiple folders
+ *
+ * @package      PHP_Library
+ * @subpackage   Core
+ * @category     Files
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Files\Sorter;

@@ -1,14 +1,14 @@
 <?php
 /**
-* Math
-*
-* Mathematical operations and calculations
-*
-* @package      PHP_Library
-* @subpackage   Core
-* @category     Numericals
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * Math
+ *
+ * Mathematical operations and calculations
+ *
+ * @package      PHP_Library
+ * @subpackage   Core
+ * @category     Numericals
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Numericals\Math;

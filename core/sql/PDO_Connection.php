@@ -1,14 +1,14 @@
 <?php
 /**
-* PDO
-*
-* Make PDO connection to a database
-*
-* @package      PHP_Library
-* @subpackage   Core
-* @category     SQL
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * PDO
+ *
+ * Make PDO connection to a database
+ *
+ * @package      PHP_Library
+ * @subpackage   Core
+ * @category     SQL
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\SQL\PDO_Connection;

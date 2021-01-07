@@ -1,14 +1,14 @@
 <?php
 /**
-* Date_Time_Format
-*
-* Date and Time formating, validating, comparing, converting...
-*
-* @package      PHP_Library
-* @subpackage   Core
-* @category     Arrangements
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * Date_Time_Format
+ *
+ * Date and Time formating, validating, comparing, converting...
+ *
+ * @package      PHP_Library
+ * @subpackage   Core
+ * @category     Arrangements
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Arrangements\Date_Time_Format;

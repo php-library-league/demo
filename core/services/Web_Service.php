@@ -1,14 +1,14 @@
 <?php
 /**
-* Web_Service
-*
-* Web service related data
-*
-* @package      PHP_Library
-* @subpackage   Core
-* @category     Services
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * Web_Service
+ *
+ * Web service related data
+ *
+ * @package      PHP_Library
+ * @subpackage   Core
+ * @category     Services
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Services\Web_Service;

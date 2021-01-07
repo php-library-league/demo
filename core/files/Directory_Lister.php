@@ -1,14 +1,14 @@
 <?php
 /**
-* Directory_Lister
-*
-* Directory content retrieval
-*
-* @package      PHP_Library
-* @subpackage   Core
-* @category     Files
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * Directory_Lister
+ *
+ * Directory content retrieval
+ *
+ * @package      PHP_Library
+ * @subpackage   Core
+ * @category     Files
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Files\Directory_Lister;

@@ -1,14 +1,14 @@
 <?php
 /**
-* Temperature
-*
-* Working with temperature conversions
-*
-* @package      PHP_Library
-* @subpackage   Core
-* @category     Numericals
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * Temperature
+ *
+ * Working with temperature conversions
+ *
+ * @package      PHP_Library
+ * @subpackage   Core
+ * @category     Numericals
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Numericals\Temperature;

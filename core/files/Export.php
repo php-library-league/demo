@@ -1,15 +1,15 @@
 <?php
 /**
-* Export
-*
-* Export files using customisation of PHPOffice/PhpSpreadsheet
-* Location: https://github.com/PHPOffice/PhpSpreadsheet
-*
-* @package      PHP_Library
-* @subpackage   Core
-* @category     Files
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * Export
+ *
+ * Export files using customisation of PHPOffice/PhpSpreadsheet
+ * Location: https://github.com/PHPOffice/PhpSpreadsheet
+ *
+ * @package      PHP_Library
+ * @subpackage   Core
+ * @category     Files
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Files\Export;

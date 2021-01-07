@@ -1,14 +1,14 @@
 <?php
 /**
-* Validation
-*
-* Validation methods
-*
-* @package      PHP_Library
-* @subpackage   Core
-* @category     Data
-* @author       Zlatan Stajić <contact@zlatanstajic.com>
-*/
+ * Validation
+ *
+ * Validation methods
+ *
+ * @package      PHP_Library
+ * @subpackage   Core
+ * @category     Data
+ * @author       Zlatan Stajić <contact@zlatanstajic.com>
+ */
 include_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Data\Validation;
