@@ -9,7 +9,7 @@
  * @category     Services
  * @author       Zlatan Stajić <contact@zlatanstajic.com>
  */
-include_once __DIR__ . '/../../../vendor/autoload.php';
+require_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\Services\Web_Service;
 use PHP_Library\Core\Arrangements\Format;

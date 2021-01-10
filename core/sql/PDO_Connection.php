@@ -9,7 +9,7 @@
  * @category     SQL
  * @author       Zlatan Stajić <contact@zlatanstajic.com>
  */
-include_once __DIR__ . '/../../../vendor/autoload.php';
+require_once __DIR__ . '/../../../vendor/autoload.php';
 
 use PHP_Library\Core\SQL\PDO_Connection;
 use PHP_Library\Core\Arrangements\Format;
