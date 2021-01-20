@@ -15,4 +15,4 @@ Just navigate to the root of PHP Library and clone this repository.
 git clone https://github.com/php-library-league/demo.git
 ```
 
-After this step you will be able to open them inside your browser or editor by visiting [index.php](index.php). Some scripts require [outsource repository](https://github.com/php-library-league/outsource) to work properly. Refer to the [shell repository](https://github.com/php-library-league/shell) for details on how to use `outsource-install.sh` in order to install outsource repository. 
+After this step you will be able to open them inside your browser or editor by visiting [index.php](index.php). Some scripts require [outsource folder](https://github.com/php-library-league/outsource) to work properly. Refer to the [shell repository](https://github.com/php-library-league/shell) for details on how to use `outsource-install.sh` in order to install outsource folder. 
